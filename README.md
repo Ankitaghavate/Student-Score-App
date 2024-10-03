@@ -50,7 +50,7 @@ Select the desired graph type and click "Show Graph" to visualize the scores.<br
 
 Acknowledgments
 Inspired by data visualization tools and educational applications.
-markdown
+
 
 
 
