@@ -12,7 +12,6 @@ Dynamic Student Score Visualization is a Python application that allows users to
   - Scatter Plot
   - Histogram
   - Box Plot
-  - Pie Chart
   - Area Chart
   - Violin Plot
   - Step Plot
