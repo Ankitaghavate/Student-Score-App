@@ -44,6 +44,7 @@ python student_score_app.py
 Input the number of students (up to 10).
 Enter the names and scores for each student.
 Select the desired graph type and click "Show Graph" to visualize the scores.<br><br>
+## Output
 ![Screenshot 2024-10-03 225344](https://github.com/user-attachments/assets/eb3141c5-05d7-48c5-bb82-a546c3860e7c)
 
 
