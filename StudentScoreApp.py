@@ -30,7 +30,7 @@ class StudentScoreApp:
         self.graph_type_var.set("Bar Graph")  # Default value
         self.graph_type_menu = tk.OptionMenu(master, self.graph_type_var,
                                              "Bar Graph", "Line Graph", "Scatter Plot", "Histogram", "Box Plot",
-                                             "Pie Chart", "Area Chart", "Violin Plot", "Step Plot", "Error Bar Plot")
+                                              "Area Chart", "Step Plot", "Error Bar Plot")
         self.graph_type_menu.pack(pady=5)
 
     def input_scores(self):
@@ -80,15 +80,9 @@ class StudentScoreApp:
             plt.boxplot(self.scores, patch_artist=True, boxprops=dict(facecolor='pink'))
             plt.title('Student Scores - Box Plot')
             plt.xticks([1], ['Scores'])
-        elif graph_type == "Pie Chart":
-            plt.pie(self.scores, labels=self.student_names, autopct='%1.1f%%', colors=plt.cm.Pink.colors)
-            plt.title('Student Scores - Pie Chart')
         elif graph_type == "Area Chart":
             plt.fill_between(self.student_names, self.scores, color='pink', alpha=0.5)
             plt.title('Student Scores - Area Chart')
-        elif graph_type == "Violin Plot":
-            plt.title('Student Scores - Violin Plot')
-            plt.xticks([0], ['Scores'])
         elif graph_type == "Step Plot":
             plt.step(self.student_names, self.scores, where='mid', color='pink')
             plt.title('Student Scores - Step Plot')
